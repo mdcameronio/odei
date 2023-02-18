@@ -14,8 +14,21 @@ body {
 .form_div {
   background-color: rgba(155, 155, 155, 0.2);
   border: 1px solid blue;
+  padding: 5.5%;
 }
 
 #student_search {
   margin-top: 30vh;
 }
+
+.button{
+  background-color:royalblue;
+  border-radius: 4px;
+  color: white;
+  border:none;
+  margin:5px;
+  padding:5px
+
+
+}
+
