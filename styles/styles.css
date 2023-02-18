@@ -1,3 +1,21 @@
 body {
-  background-color: red;
+  background-image: linear-gradient(
+    rgba(239, 189, 198, 0.94),
+    rgba(109, 101, 208, 0.936)
+  );
+  height: 100vh;
+}
+
+#odei_header {
+  background-color: rgba(155, 155, 155, 0.2);
+  margin-bottom: 20vh;
+}
+
+.form_div {
+  background-color: rgba(155, 155, 155, 0.2);
+  border: 1px solid blue;
+}
+
+#student_search {
+  margin-top: 30vh;
 }
