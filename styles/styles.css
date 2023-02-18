@@ -9,6 +9,8 @@
   --border-1-color: #6045A550;
   --border-1-size: 5px;
   --border-1-halfsize: 3.5px;
+  --button-blue-1: #695CE8;
+  --height-1: 35px;
 }
 
 html {
@@ -20,7 +22,6 @@ body {
     rgba(239, 189, 198, 0.94),
     rgba(109, 101, 208, 0.936)
   );
-  background-color: blue;
   min-height: 100vh;
 
 }
@@ -34,14 +35,36 @@ body {
   padding: 5.5%;
 }
 
-.button{
-  background-color:royalblue;
+#student_search {
+  height: var(--height-1);
+}
+
+.button {
+  background-color: var(--button-blue-1);
   border-radius: 4px;
   color: white;
-  border:none;
-  margin:5px;
-  padding:5px;
+  border: none;
+  margin: 5px;
+  padding: 0 15px 1.15px 15px; /* 1~px at bottom depends on the font, to defeat font's built in top-margin */
+  height: var(--height-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.button_2 {
+  background-color: var(--button-blue-1);
+  border-radius: 4px;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 1.15px 15px; /* 1~px at bottom depends on the font, to defeat font's built in top-margin */
+}
+
+.button_blue_1 {
+  background-color: var(--button-blue-1);
 }
 
 #form_container {
