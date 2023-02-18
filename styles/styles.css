@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --card-background_color-1: #7F569F40;
+  --border-1-color: #6045A550;
+  --border-1-size: 5px;
+  --border-1-halfsize: 3.5px;
+}
+
 html {
   min-height: 100vh;
 }
@@ -19,17 +26,13 @@ body {
 }
 
 #odei_header {
-  background-color: #7F569F40;
-/*  margin-bottom: 20vh;*/
+  background-color: var(--card-background_color-1);
 }
 
 .form_div {
-  background-color: #7F569F40;
-  border: 1px solid blue;
+  background-color: var(--card-background_color-1);
   padding: 5.5%;
 }
-
-
 
 .button{
   background-color:royalblue;
@@ -37,7 +40,35 @@ body {
   color: white;
   border:none;
   margin:5px;
-  padding:5px
+  padding:5px;
 
+}
 
+#form_container {
+  border-radius: 155px;
+}
+
+.border_1 {
+  border: var(--border-1-size) solid var(--border-1-color);
+}
+
+.border_1_halfright {
+  border-top: var(--border-1-size) solid var(--border-1-color);
+  border-right: var(--border-1-halfsize) solid var(--border-1-color);
+  border-bottom: var(--border-1-size) solid var(--border-1-color);
+  border-left: var(--border-1-size) solid var(--border-1-color);
+}
+
+.border_1_halfleft {
+  border-top: var(--border-1-size) solid var(--border-1-color);
+  border-right: var(--border-1-size) solid var(--border-1-color);
+  border-bottom: var(--border-1-size) solid var(--border-1-color);
+  border-left: var(--border-1-halfsize) solid var(--border-1-color);
+}
+
+.border_1_halfends {
+  border-top: var(--border-1-size) solid var(--border-1-color);
+  border-right: var(--border-1-halfsize) solid var(--border-1-color);
+  border-bottom: var(--border-1-size) solid var(--border-1-color);
+  border-left: var(--border-1-halfsize) solid var(--border-1-color);
 }
